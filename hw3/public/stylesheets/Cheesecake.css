@@ -1,0 +1,146 @@
+/*Marshall Zhang*/
+
+/*Formatting title*/
+h1{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 80px;
+    text-align: center;
+    background-color: #c83f49;
+}
+
+h2,h3{
+    text-align: center;
+    font-family: 'Monaco', monospace;
+    font-size: 30px;
+}
+
+.complete{
+    text-align: center;
+    font-family: 'Monaco', monospace;
+    font-size: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.toppings,.dropdown{
+    flex: 1;
+    text-align: center;
+    margin: 0 1px;
+    display: inline-block;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+}
+
+/*Fromatting drop down option*/
+.toppings,.dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover dropdown menu */
+.orders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-button{
+    background-color: #987654;
+    padding: 15px;
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.right-menu{
+    position: relative;
+    display: inline;
+}
+ 
+
+.menu-button:hover{
+    background-color: white;
+    display: block;
+    /* width: 100%; */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 15px 15px;
+    list-style: none;
+    z-index: 1;
+    width: auto;
+    max-height: 30px;
+    overflow-y: auto;
+}
+
+.dropdown-menu a {
+    /* padding: auto; */
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.dropdown-menu a:hover{
+    background-color: #987654;
+    display: block;
+    padding: auto;
+}
+
+.right-menu:hover .dropdown-menu{
+    display: block;
+    width: auto;
+}
+
+.right-menu:hover .menu-button{
+    background-color: #fff;
+    width: auto;
+}
+
+
+
+
+
+/*Fromatting notes*/
+.notebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.orderbutton{
+   /* padding: 10px 20px;
+   border: none;
+   border-radius: 5px;*/
+   font-size: 16px;
+   display: flex;
+   align-items: center;
+   margin-left: 660px;
+}
+
+
+/*main body changes*/
+
+body{
+    background-color: #e6ddc5
+}

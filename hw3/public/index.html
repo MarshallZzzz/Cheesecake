@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <! - - MARSHALL ZHANG - ->
+    <! - - January 31, 2024 - ->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/Cheesecake.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+        </script>
+    <script src="javascripts/Cheesecake.js"></script>
+    <title>Cheesecake Order Form</title>
+</head>
+<body>
+
+	<! - - title - - >
+    <h1>Cheesecake Order Form</h1>
+
+	<! - - image - - >  
+    <img src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg" width="300" height="350" class="image">
+
+    <div id="form" style="display: block;">
+
+        <! - - drop down option - - >
+        <div class="container">
+            <div class="dropdown" id="quant">
+                <h2>Quantity</h2>
+                <select id="numbers" name="numbers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <! - - radio buttons - - >
+            <div class="toppings">	
+                <h3>Toppings</h3>
+                <label>
+                    <input type="radio" class="myRadio" name="topping" value="plain"> Plain
+                </label>
+
+                <label>
+                    <input type="radio" class="myRadio" name="topping" value="cherry"> Cherry
+                </label>
+
+                <label>
+                    <input type="radio" class="myRadio" name="topping" value="chocolate"> Chocolate
+                </label>
+            </div>
+        </div>
+        <! - - notes - - >
+    
+        <div class="notebox">
+            
+            <textarea id="notes" name="notes" rows="5" cols="50" placeholder="Enter any special requests:"></textarea>
+        </div>
+                <! - - button - - >
+            <button class="orderbutton">Order</button>
+    </div>
+   
+    <div id="result" style="display: none;">
+        <h2> Thank you! Your order has been placed! </h2>
+        <h3> Order Details: </h3>
+        <div id="orderDeets" class="complete"></div>
+    </div>
+
+    <div class="orders">
+        <div class="right-menu">
+            <h4>Orders for </h4>
+            <button class="menu-button">Month</button>        
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Jan</a>
+                <a class="dropdown-item" href="#">Feb</a>
+                <a class="dropdown-item" href="#">March</a>
+                <a class="dropdown-item" href="#">April</a>
+                <a class="dropdown-item" href="#">May</a>
+                <a class="dropdown-item" href="#">June</a>
+                <a class="dropdown-item" href="#">July</a>
+                <a class="dropdown-item" href="#">Aug</a>
+                <a class="dropdown-item" href="#">Sep</a>
+                <a class="dropdown-item" href="#">Oct</a>
+                <a class="dropdown-item" href="#">Nov</a>
+                <a class="dropdown-item" href="#">Dec</a>
+            </div>
+        </div>
+        <ul>
+            <li>11 Cherry</li>
+            <li>17 Chocolate</li>
+            <li>31 Plain</li>
+        </ul>
+    </div>   
+
+
+</body>
+</html>    
