@@ -1,0 +1,30 @@
+MARSHALL ZHANG
+- SQL commands
+- HW3
+- February 7th, 2023
+
+
+CREATE DATABASE CHEESECAKE;	//creating database
+USE CHEESECAKE;			//changing directory
+
+mysql> CREATE TABLE ORDERS (	//creating table with appropriate column names and types
+    -> ORDERID int,
+    -> MONTH CHAR(3),
+    -> DAY int,
+    -> QUANTITY int,
+    -> TOPPING ENUM('Plain', 'Chocolate', 'Cherry'),
+    -> NOTES VARCHAR(512)
+    -> );
+
+DESCRIBE ORDERS;		//checking for tables
+
+//interlude - put csv file into table
+
+SELECT * FROM ORDERS;		//returning all rows from table
+
+mysql> SELECT *			//return all rows in FEB
+    -> FROM ORDERS
+    -> WHERE MONTH = 'FEB';
+
+mysql> INSERT INTO ORDERS	//inserts new row 
+    -> VALUES('47', 'SEP', '11', 2, 'CHERRY', 'TIRED');
